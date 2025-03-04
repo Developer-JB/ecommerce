@@ -1,0 +1,22 @@
+{% include "store/base.html" %}
+
+
+{% load static %}
+
+
+{% block content %}
+
+
+<form method='POST' autocomplete="off">
+{% csrf_token%}
+
+
+{{form}}
+<button type='submit'>Register</button>
+
+</form>
+
+
+
+{% endblock %}
+
